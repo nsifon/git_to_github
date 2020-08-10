@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Videos</title>
+		<meta name="description" content="Escribinos, llamanos o mensajeanos para coordinar donaciones o simplemente sacarte las dudas">
+		<link rel="stylesheet" type="text/css" href="css/estilos.css">
+		<!-- BS CSS -->
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+		<!-- Font Awesome -->
+		<script src="https://kit.fontawesome.com/9e8d345d8a.js" crossorigin="anonymous"></script>
+		<!-- Animate on Scroll -->
+		<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+		<!-- Google Fonts -->
+		<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+	</head>
+<body id="home">
+
+	<!-- Botón DONAR -->
+	<header>
+		<a href="#">
+			<div class="donarFixed">
+				<button type="button" class="btn btn-primary">
+					<i class="heart-beat fas fa-heart"></i>
+					<span>Donar</span>
+				</button>
+			</div>
+		</a>
+	</header>
+
+	<!-- Logo + Redes -->
+	<header id="logoRedesMenu">
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+		<div class="container">
+		  	<!-- Logo -->
+			<a class="navbar-brand" href="index.html">
+				<div class="logoPrincipal" data-aos="fade-right" data-aos-duration="1500">
+					<img src="media/logo.png" />
+					<p>OSC<span>Fundación</span></p>
+				</div>
+			</a>
+			<!-- Burguer Menú -->
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample07" aria-controls="navbarsExample07" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<!-- Menú Elements -->
+			<div class="collapse navbar-collapse" id="navbarsExample07">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item active">
+					<a class="nav-link inicio" href="index.html">Inicio</a>
+					</li>
+					<li class="nav-item">
+					<a class="nav-link somos" href="somos.html">Somos</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link hacemos" href="hacemos.html">Hacemos</a>
+					</li>
+					<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle galeria" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						Galería
+					</a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+						<a class="dropdown-item fotos" href="fotos.html">Fotos</a>
+						<div class="dropdown-divider"></div>
+						<a class="dropdown-item videos" href="videos.html">Videos</a>
+					</div>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link contacto" href="contacto.html">Contacto</a>
+					</li>
+					<li class="nav-item redes-osc">
+						<a class="nav-link" href="#"><i class="fab fa-facebook-square"></i></a>
+					</li>
+					<li class="nav-item redes-osc">
+						<a class="nav-link" href="#"><i class="fab fa-instagram"></i></a>
+					</li>
+					<li class="nav-item redes-osc">
+						<a class="nav-link" href="#"><i class="fab fa-youtube"></i></a>
+					</li>
+					<li class="nav-item redes-osc">
+						<a class="nav-link" href="#"><i class="fab fa-linkedin"></i></a>
+					</li>
+					<li class="nav-item redes-osc">
+						<a class="nav-link" href="#"><i class="fas fa-mobile-alt"></i></a>
+					</li>
+					<li class="nav-item redes-osc">
+						<a class="nav-link" href="#"><i class="fab fa-whatsapp"></i></a>
+					</li>
+					<li class="nav-item redes-osc">
+						<a class="nav-link" href="#"><i class="far fa-paper-plane"></i></a>
+					</li>
+				</ul>
+				<form class="form-inline my-2 my-md-0">
+				<input class="form-control" type="text" placeholder="Buscar" aria-label="Search">
+				</form>
+			</div>
+		</div>
+	</nav>
+	</header>
+	<!-- Breadcrumbs -->
+	<div class="container">
+		<nav aria-label="breadcrumb">
+			<ol class="breadcrumb">
+			<li class="breadcrumb-item"><a href="#">Inicio</a></li>
+			<li class="breadcrumb-item active" aria-current="page">Contacto</li>
+			</ol>
+		</nav>	
+	</div>
+
+	<!-- Jumbotron -->
+
+	<div class="jumbotron">
+		<div class="container">
+		  <h1 class="display-3">Contacto</h1>
+		  <p>Escribinos, llamanos o mensajeanos para coordinar donaciones o simplemente sacarte las dudas</p>
+		  <p><a class="btn btn-primary btn-lg" href="#" role="button">Donar »</a></p>
+		</div>
+	</div>
+	
+	<!-- Collapse Content -->
+
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<div class="card">
+					<div class="card-header bg-primary text-white"><i class="fa fa-envelope"></i> Contáctenos
+					</div>
+					<div class="card-body">
+						<form>
+							<div class="form-group">
+								<label for="name">Nombre ó Razón Social *</label>
+								<input type="text" class="form-control" id="name" aria-describedby="emailHelp" placeholder="Ingrese su nombre completo o razón social" required>
+							</div>
+							<div class="form-group">
+								<label for="email">Correo electrónico *</label>
+								<input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Ingrese su email para responderle" required>
+								<small id="emailHelp" class="form-text text-muted">Protegemos tu privacidad no compartiendo tu email con nadie.</small>
+							</div>
+							<div class="form-group">
+								<label for="message">Mensaje</label>
+								<textarea class="form-control" id="message" rows="6" placeholder="Ingrese su solicitud o mensaje. Le responderemos a la brevedad." required></textarea>
+							</div>
+							<div class="mx-auto">
+							<button type="submit" class="btn btn-primary text-right">Enviar!</button></div>
+						</form>
+					</div>
+				</div>
+			</div>
+			<div class="col-12 col-sm-4">
+				<div class="card bg-light mb-3">
+					<div class="card-header bg-success text-white text-uppercase"><i class="fa fa-home"></i> Visitanos</div>
+					<div class="card-body">
+						<p>Av. Siempreviva 1234</p>
+						<p>CP 1202 CABA</p>
+						<p>Argentina</p>
+						<p>Email: <a href="mailto:info@fundacionosc.com">info@fundacionosc.com</a></p>
+						<p>Tel. <a href="tel:+540114343-0000">+54 011 4343-0000</a></p>
+	
+					</div>
+	
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!-- Pie de página -->	
+	<footer>
+		<nav class="navbar navbar-expand-lg  justify-content-center">
+			<ul class="navbar-nav">
+				<li class="nav-item redes-osc">
+					<a class="nav-link" href="#"><i class="fab fa-facebook-square"></i></a>
+				</li>
+				<li class="nav-item redes-osc">
+					<a class="nav-link" href="#"><i class="fab fa-instagram"></i></a>
+				</li>
+				<li class="nav-item redes-osc">
+					<a class="nav-link" href="#"><i class="fab fa-youtube"></i></a>
+				</li>
+				<li class="nav-item redes-osc">
+					<a class="nav-link" href="#"><i class="fab fa-linkedin"></i></a>
+				</li>
+				<li class="nav-item redes-osc">
+					<a class="nav-link" href="#"><i class="fas fa-mobile-alt"></i></a>
+				</li>
+				<li class="nav-item redes-osc">
+					<a class="nav-link" href="#"><i class="fab fa-whatsapp"></i></a>
+				</li>
+				<li class="nav-item redes-osc">
+					<a class="nav-link" href="#"><i class="far fa-paper-plane"></i></a>
+				</li>
+			</ul>
+		</nav>
+	</footer>
+
+	<!-- Animate On Scroll -->
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<script>
+	AOS.init();
+	</script>
+
+	<!-- JS, Popper.js, and jQuery -->
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+	<!-- Menu WHITEN on Scroll -->
+	<script type="text/javascript">
+		window.onscroll = function() {scrollFunction()};
+		function scrollFunction() {
+		if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 10) {
+			document.getElementById("logoRedesMenu").style.background = "rgba(255,255,255,0.9)";
+			} else {
+			document.getElementById("logoRedesMenu").style.background = "transparent";
+			}
+	}
+	</script>
+</body>
+</html>

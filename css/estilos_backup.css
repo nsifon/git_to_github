@@ -1,0 +1,442 @@
+/* Html & Body */
+
+html {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	}
+
+body {
+	margin: 0 auto;
+	font-family: Calibri, Verdana, sans-serif;
+	background-size: cover;
+	background-attachment: fixed;
+	width:100%;
+	max-width: 960px;
+	}
+
+/* Body particular */
+
+body#home {
+	background-image: url(media/home-background.jpg);
+	}
+
+body#somos {
+	background-image: url(media/somos-background.jpg);
+	}
+
+body#hacemos {
+	background-image: url(media/hacemos-background.jpg);
+	background-repeat: repeat;
+	background-size: 200px auto;
+	}
+
+body#fotos {
+	background-image: url(media/fotos-background.jpg);
+	}
+
+body#videos {
+	background-image: url(media/videos-background.jpg);
+	}
+
+body#contacto {
+	background-image: url(media/contacto-background.jpg);
+	}
+
+/* Generales */
+
+header {
+	display: block;
+	width:100%;
+	}
+
+h1 { 
+	background: rgb(95,15,64);
+	background: -webkit-linear-gradient(left, rgba(95,15,64,1) 0%, rgba(15,76,92,1) 100%);
+	background: -o-linear-gradient(left, rgba(95,15,64,1) 0%, rgba(15,76,92,1) 100%);
+	background: linear-gradient(to right, rgba(95,15,64,1) 0%, rgba(15,76,92,1) 100%);
+	color:white;
+	padding: 7px;
+	font-family: Roboto, Calibri, sans-serif;
+	font-weight: 700;
+	font-size: 1.5em;
+	}
+
+h2 {
+	color: green;
+	border-bottom: 2px green dotted;
+	padding-bottom: 7px;
+	font-family: Roboto, Calibri, sans-serif;
+	font-weight: 700;
+	}
+
+h3, h4, h5, h6 {
+	color: blue;
+	font-family: Roboto, Calibri, sans-serif;
+	font-weight: 500;
+	}
+
+ul {
+	margin: 0;
+	padding: 0;
+	}
+
+.contenido {
+	background-color: white;
+	max-width: 100%;
+	}
+
+/* Subgenerales */
+
+header#logoRedes {
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	}
+
+header#logoRedes .flexItem {
+	flex-basis: 50%;
+	text-align:center;
+	}
+
+/* DONAR */
+
+.donarfixed {
+	display: flex;
+    align-items: center;
+    justify-content: center;
+	z-index: 999;
+	position: fixed;
+	width: 110px;
+	height: 25px;
+	bottom: 15px;
+	right: 15px;
+	font-weight: bolder;
+	font-size: 1.5em;
+	padding: 8px;
+	color: rgba(15,76,92,1);
+	border-radius: 10px;
+	border: 2px solid rgba(95,15,64,1);
+	background: rgba(255,255,255,0.7);
+	transition: all 0.5s ease;
+	box-shadow: 2px 2px 3px #999;
+	text-decoration:none;
+	text-transform: uppercase;
+	}
+
+.donarfixed:hover  {
+	background: rgba(95,15,64,1);
+	color:white;
+	transition: all 0.5s ease;
+	text-decoration: none;
+	}
+
+.donarfixed .heart-beat {
+	position: relative;
+	width:20px;
+	-webkit-animation: heart-beats-m 3s infinite;
+	animation: heart-beats-m 3s infinite;
+	margin-right:12px;
+	color: red;
+	}
+
+@keyframes heart-beats-m {
+  0%   { transform: scale(1); background-color:transparent;}
+  7%  { transform: scale(1.2); }
+  12%  { transform: scale(1.1); }
+  20%  { transform: scale(1.3); }
+  60%  { transform: scale(1); }
+  100% { transform: scale(0.99); 	}
+	}
+
+/* Logo OSC */
+
+.logo-osc {
+	background-color: transparent;
+	position: relative;
+	}
+
+.logo-osc img {
+	width: 56px;
+	height: auto;
+	vertical-align: middle;
+	}
+
+.logo-osc p {
+	font-family: 'Bebas Neue', Calibri, sans-serif;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -12px);
+    font-size: 20px;
+    color: #5f0f40;
+    text-shadow: 0 0 4px white, 0 0 4px white;
+    line-height: 1.1em;
+	}
+
+.logo-osc span {
+	display:block;
+	font-size: 30px;
+	}
+
+/* Redes OSC */
+
+.redes-osc {
+	display:flex;
+	justify-content: center;
+	}
+
+.redes-osc ul {
+	display:flex;
+	justify-content: center;
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	}
+
+.redes-osc li + li {
+	margin-left:13px;
+	}
+
+.redes-osc a {
+	color: #0f4c5c;
+	font-size: 1.3rem;
+	padding: 7px;
+	transition: all 0.5s ease;
+	}
+
+.redes-osc a:hover {
+	background-color: white;
+	padding: 3px 5px;
+	border-radius: 3px;
+	}
+
+/* Menú Principal */
+
+header#menuPrincipal {
+	position: sticky;
+    top: 0;
+    transition: all .3s ease;
+    z-index: 9999;
+	}
+
+header#menuPrincipal nav ul {
+    list-style-type: none;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: transparent;
+	}
+
+header#menuPrincipal nav ul li {
+	color: rgba(15,76,92,1);
+	background-color: rgba(255,255,255,0.8);
+	border: 2px solid rgba(15,76,92,1);
+	border-radius: 3px;
+	padding: 10px 15px;
+    margin: 5px;
+    transition: all .5s ease;
+	}
+
+header#menuPrincipal nav ul li:hover {
+	background-color:  white;
+	transform: scale(1.12,1.12) rotate(5deg);
+	border-radius: 7px;
+	}
+
+header#menuPrincipal nav ul li::active {
+	background-color: white;
+	transform: scale(1.12,1.12) rotate(5deg);
+	color:white;
+	}
+
+header#menuPrincipal nav ul li a {
+	text-decoration: none;
+	font-family: Roboto, Calibri, sans-serif;
+	font-weight: 700;	
+	}
+
+header#menuPrincipal nav li::before {
+	font-family: FontAwesome;
+	color: #0f4c5c;
+	margin-right:10px;
+	}
+
+header#menuPrincipal nav li.inicio::before {
+	content: '\f015';
+	}
+header#menuPrincipal nav li.somos::before {
+	content: '\f0c0';
+	}
+header#menuPrincipal nav li.hacemos::before {
+	content: '\f560';
+	}
+header#menuPrincipal nav li.galeria::before {
+	content: '\f87c';
+	}
+header#menuPrincipal nav li.contacto::before {
+	content: '\f1d8';
+	}
+
+header#menuPrincipal nav li {
+	position: relative;
+}
+
+header#menuPrincipal nav li.galeria ul {
+	display: none;
+	}
+
+header#menuPrincipal nav li.galeria:hover ul {
+	display: block;
+	position:absolute;
+	top:42px;
+	right:0;
+	text-align: left;
+	}
+
+header#menuPrincipal nav li.galeria:hover ul li {
+	width:inherit;
+	margin: 1px 0 0;
+	}
+
+header#menuPrincipal nav li.galeria ul li.fotos::before {
+	content: '\f03e';
+	}
+
+header#menuPrincipal nav li.galeria ul li.videos::before {
+	content: '\f008';
+	}	
+
+/* Inicio */
+
+#home header#menuPrincipal nav li.inicio {
+	display:none;
+}
+
+#home .contenido article {
+	text-align:center;
+	width:100%;
+	padding:10px;
+	margin: 5px;
+	border: 1px solid orange;
+}
+
+#home .contenido {
+	display: flex;
+	flex-flow:row nowrap;
+	}
+
+.contArticulo {
+	font-family: inherit;
+	}
+
+.imgArticulo img {
+	width:100%;
+	
+	}
+
+.textArticulo {	
+font-family: inherit;
+	}
+
+.textArticulo span a {
+    font-weight: bolder;
+    border: 2px solid blue;
+    padding: 5px 10px;
+    border-radius: 10px;
+    margin: 0 auto;
+    display: block;
+    max-width: 65px;
+    text-align: center;
+    text-decoration: none;
+    }
+
+.textArticulo span a:hover {
+    background-color: blue;
+    color:white;
+    }
+
+.featured img {
+	width: 100%;
+}
+
+table {
+	border:2px dashed green;
+    -moz-border-radius:5px;
+    -webkit-border-radius:5px;
+    border-radius:5px;
+    width:100%;
+}
+
+table tbody {
+	background-color:rgba(255,255,255,0.7);
+}
+
+/* Galería: Fotos */
+
+.galeriaImg {
+	object-fit: cover;
+	display: block;
+	}
+
+.galeriaImg img {
+	width: 100%;
+    height: 100%;
+    object-fit: cover;
+	}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 15vw 15vw 20vw 30vw;
+  grid-gap: 5px 5px;
+  grid-template-areas: "galeria_img_01 galeria_img_02 galeria_img_05 galeria_img_05" "galeria_img_03 galeria_img_04 galeria_img_05 galeria_img_05" "galeria_img_06 galeria_img_06 galeria_img_07 galeria_img_07" "galeria_img_08 galeria_img_08 galeria_img_08 galeria_img_08";
+	}
+
+.galeria_img_01 { grid-area: galeria_img_01; }
+
+.galeria_img_02 { grid-area: galeria_img_02; }
+
+.galeria_img_03 { grid-area: galeria_img_03; }
+
+.galeria_img_04 { grid-area: galeria_img_04; }
+
+.galeria_img_05 { grid-area: galeria_img_05; }
+
+.galeria_img_06 { grid-area: galeria_img_06; }
+
+.galeria_img_07 { grid-area: galeria_img_07; }
+
+.galeria_img_08 { grid-area: galeria_img_08; }
+
+/* Pié de Página */
+
+footer {
+	text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    margin: 20px auto 0;
+    background: linear-gradient(359deg, #5f0f40, #0f4c5c);
+    background-size: 400% 400%;
+	animation: FooterTransition 7s ease infinite;
+  
+}
+
+@keyframes FooterTransition {
+    0%{background-position:50% 0%}
+    50%{background-position:50% 100%}
+    100%{background-position:50% 0%}
+}
+
+footer .redes-osc a {
+	color: white;
+	font-size: 1.6rem;
+	padding: 7px;
+	transition: all 0.5s ease;
+	}
+
+footer .redes-osc a:hover {
+	background-color: rgba(95,15,64,1);
+}

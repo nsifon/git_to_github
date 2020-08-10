@@ -1,0 +1,106 @@
+@charset 'utf-8';
+
+// Logo
+
+.logoPrincipal {
+    width: fit-content;
+    text-align: center;
+    margin: 0 auto;
+      
+    img {
+      width: 56px;
+      height: auto;
+    }
+  
+    p {
+      font-family: 'Bebas Neue', Calibri, sans-serif;
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translate(-50%, 10px);
+      font-size: 1.7rem;
+      color: #5f0f40;
+      text-shadow: 0 0 4px white, 0 0 4px white;
+      line-height: 20px;
+      margin:0;
+    }
+  
+    span {
+      display: block;
+      font-size: 20px;
+    }
+  }
+  
+// Menú
+  
+  #logoRedesMenu {
+
+    z-index: 999;
+    
+    .navbar li {
+
+      transition: all .5s ease;
+
+      &:hover {
+        transform: scale(1.1,1.1) rotate(3deg);
+      }
+    }
+
+    a {
+      &::before {
+        font-family: FontAwesome;
+        color: #ffffff;
+        margin-right: 5px;
+      }
+    
+      &.inicio::before {
+        content: '\f015';
+      }
+
+      &.somos::before {
+        content: '\f0c0';
+      }
+
+      &.hacemos::before {
+        content: '\f560';
+      }
+
+      &.galeria::before {
+        content: '\f87c';
+      }
+
+      &.contacto::before {
+        content: '\f1d8';
+      }
+    
+      &.dropdown-item {
+        
+        &::before {
+          color: grey;
+        }
+
+        &.fotos::before {
+          content: '\f03e';
+        }
+
+        &.videos::before {
+          content: '\f008';
+        }
+      }
+    }
+  }
+
+  .redes-osc {
+    display: flex;
+    align-items: center;
+  
+    a.nav-link {
+      padding: 0 5px;
+      font-size: 18px;
+    }
+  
+  }
+
+h1 {
+    @include titulos(1em,900,green)
+}

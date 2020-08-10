@@ -1,0 +1,44 @@
+@charset 'utf-8';
+
+$red: red;
+$colorh: green;
+
+@mixin titulos($fontsize, $fontweight, $fontcolor) {
+    font-size: $fontsize;
+    font-weight: $fontweight;
+    color: $fontcolor;
+}
+
+p {
+
+    @if ($colorh == green) {
+        color: green;
+    }
+    @else if ($colorh == yellow) {
+        color: yellow;
+    }
+
+    @else {
+        color:black;
+    }
+
+
+}
+
+@for $i from 1 through 6 {
+    h#{$i} {
+        font-size: $i*1em
+    }
+}
+
+$redes: (
+    twitter: lightblue,
+    facebook: blue,
+    gmail: red
+);
+
+@each $red, $color in $redes {
+    .icon-#{$red} {
+        background-color:white;
+    }
+}
