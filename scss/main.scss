@@ -4,7 +4,13 @@
 @import "header.scss";
 @import "donar.scss";
 
-/* Galería: Fotos */
+// Rotador
+
+.carousel-caption {
+  background-color: hsla(0, 100%, 0%, 0.5)
+}
+
+// Galería: Fotos
   
   .galeriaImg {
     object-fit: cover;
@@ -14,7 +20,14 @@
       width: 100%;
       height: 100%;
       object-fit: cover;
+      transition: all 0.3s ease;
+      &:hover {
+        transform: scale(1.1, 1.1);
+        cursor: pointer;
+      }
     }
+    
+      
   }
   
   .grid-container {
@@ -22,7 +35,11 @@
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 15vw 15vw 20vw 30vw;
     grid-gap: 5px 5px;
-    grid-template-areas: "galeria_img_01 galeria_img_02 galeria_img_05 galeria_img_05" "galeria_img_03 galeria_img_04 galeria_img_05 galeria_img_05" "galeria_img_06 galeria_img_06 galeria_img_07 galeria_img_07" "galeria_img_08 galeria_img_08 galeria_img_08 galeria_img_08";
+    grid-template-areas:
+    "galeria_img_01 galeria_img_02 galeria_img_05 galeria_img_05"
+    "galeria_img_03 galeria_img_04 galeria_img_05 galeria_img_05"
+    "galeria_img_06 galeria_img_06 galeria_img_07 galeria_img_07"
+    "galeria_img_08 galeria_img_08 galeria_img_08 galeria_img_08";
   }
   
   .galeria_img_01 {

@@ -1,7 +1,7 @@
 @charset 'utf-8';
 
 $red: red;
-$colorh: green;
+$colorh: white;
 
 @mixin titulos($fontsize, $fontweight, $fontcolor) {
     font-size: $fontsize;
@@ -9,11 +9,13 @@ $colorh: green;
     color: $fontcolor;
 }
 
-p {
+.carousel-caption {
+    p {
 
-    @if ($colorh == green) {
-        color: green;
+    @if ($colorh == white) {
+        color: white;
     }
+    
     @else if ($colorh == yellow) {
         color: yellow;
     }
@@ -21,8 +23,7 @@ p {
     @else {
         color:black;
     }
-
-
+    }
 }
 
 @for $i from 1 through 6 {
