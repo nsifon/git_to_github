@@ -89,6 +89,9 @@ h1 {
   font-weight: 900;
   color: green; }
 
+.navbar-collapse {
+  z-index: 2; }
+
 .donarFixed {
   display: flex;
   align-items: center;
