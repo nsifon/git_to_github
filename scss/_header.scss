@@ -2,33 +2,33 @@
 
 // Logo
 
-.logoPrincipal {
-    width: fit-content;
-    text-align: center;
-    margin: 0 auto;
-      
-    img {
-      width: 56px;
-      height: auto;
-    }
-  
-    p {
-      font-family: 'Bebas Neue', Calibri, sans-serif;
-      position: absolute;
-      top: 0;
-      left: 50%;
-      transform: translate(-50%, 10px);
-      font-size: 1.7rem;
-      color: #5f0f40;
-      text-shadow: 0 0 4px white, 0 0 4px white;
-      line-height: 20px;
-      margin:0;
-    }
-  
-    span {
-      display: block;
-      font-size: 20px;
-    }
+  .logoPrincipal {
+      width: fit-content;
+      text-align: center;
+      margin: 0 auto;
+        
+      img {
+        width: 56px;
+        height: auto;
+      }
+    
+      p {
+        font-family: 'Bebas Neue', Calibri, sans-serif;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, 10px);
+        font-size: 1.7rem;
+        color: white;
+        text-shadow: 0 0 2px #5f0f40, 0 0 2px #5f0f40;
+        line-height: 20px;
+        margin:0;
+      }
+    
+      span {
+        display: block;
+        font-size: 20px;
+      }
   }
   
 // Menú
@@ -40,6 +40,7 @@
     .navbar li {
 
       transition: all .5s ease;
+      text-align: center;
 
       &:hover {
         transform: scale(1.1,1.1) rotate(3deg);
@@ -93,12 +94,13 @@
   .redes-osc {
     display: flex;
     align-items: center;
-  
-    a.nav-link {
+    
+      a.nav-link {
       padding: 0 5px;
       font-size: 18px;
-    }
-  
+      margin: 0 auto;
+      }
+   
   }
 
 h1 {
